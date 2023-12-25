@@ -1,0 +1,35 @@
+/* Дополнительно, если вы хотите, чтобы box-sizing применялся ко всем элементам на странице */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.4em;
+}
+
+h1, h2, h3, h4, h5, h6, body, img, p, span {
+    margin: 0;
+    padding: 0;
+}
+
+/* Обнуление стилей для всех списков */
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Обнуление стилей для элементов списка */
+li {
+    text-decoration: none;
+    /* Это для ссылок, если они есть внутри элементов списка */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
