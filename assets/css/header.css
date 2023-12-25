@@ -1,0 +1,76 @@
+.header {
+    padding-top: 51px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    margin-bottom: 3px;
+    display: flex;
+    gap: 11px;
+}
+
+.logo-image {
+    width: 25px;
+    height: 25px;
+}
+
+.logo-text {
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+}
+
+.menu {
+    margin-left: 146px;
+    padding: 3px 0 4px 0;
+}
+
+.menu__list {
+    display: flex;
+    gap: 45px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+.menu__item_active, .menu__link_active {
+    color: #6E9C9F;
+    font-weight: 700;
+}
+
+.call-order-button-img {
+    width: 27px;
+    height: 27px;
+    border-radius: 4px;
+    background-image: url('../img/telephone.svg');
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.5s ease;
+}
+
+.call-order-button-img:hover {
+    background-color: #6E9C9F;
+    background-image: url('../img/telephone_alt.svg');
+}
+
+.call-order-button {
+    margin: 0.5px 9px 0.5px 170px;
+}
+
+.phone-number {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    margin: 3px auto 4px 0;
+}
+
+.cart-button-img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-button {
+    margin: 2px 0;
+}
