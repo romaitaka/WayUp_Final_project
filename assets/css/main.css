@@ -63,5 +63,6 @@ button::-moz-focus-inner {
 
 .container_flex {
     display: flex;
+    align-items: center;
 }
 
