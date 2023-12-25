@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Интернет-бутик Womazing</title>
+<meta name="description"
+    content="Откройте для себя последние тенденции женской моды в интернет-бутике Womazing - изысканная коллекция женской одежды. Почувствуйте элегантность с нашим исключительным ассортиментом платьев, аксессуаров и многого другого.">
+<meta name="keywords"
+    content="женская мода, интернет-бутик, Womazing, женская одежда, шоппинг, элегантные платья, модные аксессуары">
+<meta name="author" content="Роман Ф.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Интернет-бутик Womazing">
+<meta property="og:description"
+    content="Войдите в мир моды Womazing и найдите свой уникальный стиль с нашей эксклюзивной коллекцией женской одежды.">
+<meta property="og:type" content="website">
+<!-- <meta property="og:url" content="http://www.yourwebsite.com"> -->
+<!-- <meta property="og:image" content="http://www.yourwebsite.com/images/og-image.jpg"> -->
+
+<!-- Adding favicon -->
+<!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+<!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+
+<!-- <link rel="canonical" href="http://www.yourwebsite.com"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/main.css">
+
+<body class="body">
+
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+
+    <header class="header">
+        <div class="container container_flex">
+            <div class="logo">
+                <img src="./assets/img/dress.svg" alt="Dress" class="logo-image">
+                <p class="logo-text">Womazing</p>
+            </div>
+            <!-- Навигационное меню -->
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="menu__item menu__item_active">
+                        <a class="menu__link menu__link_active" href="shop.html">Магазин</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="call-order-button" id="call-order--button">
+                <div class="call-order-button-img"></div>
+            </button>
+            <a href="#" class="phone-number">+7 (495) 823-54-12</a>
+            <button class="cart-button" id="cart-button">
+                <img src="./assets/img/shopping-bags.svg" alt="Cart" class="cart-button-img">
+            </button>
+        </div>
+    </header>
+    
+    <!-- Modal-window -->
+    <div id="callbackModal" class="modal">
+        <!-- Содержимое модального окна -->
+        <div class="modal-content">
+            <img src="./assets/img/close.svg" alt="Закрыть" class="close">
+            <h3 class="modal-title">Заказать обратный звонок</h2>
+                <form id="callbackForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                    </div>
+                    <button type="submit" class="btn-submit">Заказать звонок</button>
+                </form>
+        </div>
+    </div>
+    <!-- Modal-window -->
+
+
+    <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/modal-window.js"></script>
+</body>
+
+</html>
