@@ -29,7 +29,7 @@ This project is not just a showcase of my technical abilities but also an embodi
 Thank you for visiting and exploring the "Womazing" world of fashion.
 
 
-=====================================================================================================================================================================================
+==============================================
 //**Translation for Russian-speaking users**//
 
 
