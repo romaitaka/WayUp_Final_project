@@ -2,6 +2,7 @@
 @import url(header.css);
 @import url(animation.css);
 @import url(modal-window.css);
+@import url(../css/main-page/Main-page-first-section.css);
 
 *, *::before, *::after {
     box-sizing: border-box;
