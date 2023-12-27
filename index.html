@@ -94,23 +94,65 @@
     <!-- Second Modal-window -->
     <section class="Main-page-first-section">
         <div class="container">
-            <div class="offer">
-                <h1 class="offer__title">Новые поступления в этом сезоне</h1>
-                <p class="offer__text">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в этом сезоне.
-                    Время
-                    исследовать.</p>
-                <div class="offer__buttons">
-                    <button id="arrow-down-button">
-                        <img src="./assets/img/arrow-down.svg" alt="Arrow down button" class="arrow-down-button-icon">
-                    </button>
-                    <a href="shop.html" class="button-open-shop">Открыть магазин</a>
+            <div class="wrapper-main">
+                <div class="wrapper-main__left">
+                    <div class="offer">
+                        <!-- Slider componets -->
+                        <!-- titles -->
+                        <h1 class="offer__title active">Новые поступления в этом сезоне</h1>
+                        <h1 class="offer__title">Что-то новенькое. Мы заждались тебя.</h1>
+                        <h1 class="offer__title">Включай новый сезон с WOMAZING</h1>
+                        <!-- titles -->
+                        <!-- text -->
+                        <p class="offer__text active">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в
+                            этом
+                            сезоне. Время исследовать.</p>
+                        <p class="offer__text">Надоело искать себя в сером городе? Настало время новых идей, свежих
+                            красок и вдохновения с Womazing!</p>
+                        <p class="offer__text">Мы обновили ассортимент - легендарные коллекции и новинки от
+                            отечественных дизайнеров.</p>
+                        <!-- text -->
+                        <!-- Slider componets -->
+                        <div class="offer__buttons">
+                            <button id="arrow-down-button">
+                                <img src="./assets/img/arrow-down.svg" alt="Arrow down button"
+                                    class="arrow-down-button-icon">
+                            </button>
+                            <a href="shop.html" class="button-open-shop">Открыть магазин</a>
+                        </div>
+                    </div>
+                    <div class="offer__dots">
+                        <div class="offer__dot active"></div>
+                        <div class="offer__dot "></div>
+                        <div class="offer__dot"></div>
+                    </div>
+                </div>
+                <div class="wrapper-main__right">
+                    <!-- Slider componets -->
+                    <!-- photo -->
+                    <div class="offer__photo-wrapper">
+                        <div class="offer__photo active first-photo"></div>
+                        <div class="offer__photo second-photo"></div>
+                        <div class="offer__photo trird-photo"></div>
+                        <!-- mini-photos -->
+                        <div class="offer__mini-photo-left"></div>
+                        <div class="offer__mini-photo-right"></div>
+                        <!-- mini-photos -->
+                    </div>
+                    <!-- photo -->
+                    <!-- Slider componets -->
                 </div>
             </div>
+
+
+
+
         </div>
     </section>
 
     <script src="./assets/js/preloader.js"></script>
     <script src="./assets/js/modal-window.js"></script>
+    <script src="./assets/js/offer-slider.js"></script>
 </body>
 
 </html>
