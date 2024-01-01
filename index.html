@@ -30,38 +30,6 @@
         <div class="loader"></div>
     </div>
     <!-- Preloder -->
-    <header class="header">
-        <div class="container container_flex">
-            <div class="logo">
-                <img src="./assets/img/dress.svg" alt="Dress" class="logo-image">
-                <p class="logo-text">Womazing</p>
-            </div>
-            <!-- Навигационное меню -->
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item menu__item_active">
-                        <a class="menu__link menu__link_active" href="index.html">Главная</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="shop.html">Магазин</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="about.html">О бренде</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="contacts.html">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="call-order-button" id="call-order--button">
-                <div class="call-order-button-img"></div>
-            </button>
-            <a href="#" class="phone-number">+7 (495) 823-54-12</a>
-            <button class="cart-button" id="cart-button">
-                <img src="./assets/img/shopping-bags.svg" alt="Cart" class="cart-button-img">
-            </button>
-        </div>
-    </header>
     <!-- First Modal-window -->
     <div id="callbackModal" class="modal">
         <!-- Содержимое модального окна -->
@@ -92,67 +60,249 @@
         </div>
     </div>
     <!-- Second Modal-window -->
-    <section class="Main-page-first-section">
-        <div class="container">
-            <div class="wrapper-main">
-                <div class="wrapper-main__left">
-                    <div class="offer">
-                        <!-- Slider componets -->
-                        <!-- titles -->
-                        <h1 class="offer__title active">Новые поступления в этом сезоне</h1>
-                        <h1 class="offer__title">Что-то новенькое. Мы заждались тебя.</h1>
-                        <h1 class="offer__title">Включай новый сезон с WOMAZING</h1>
-                        <!-- titles -->
-                        <!-- text -->
-                        <p class="offer__text active">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в
-                            этом
-                            сезоне. Время исследовать.</p>
-                        <p class="offer__text">Надоело искать себя в сером городе? Настало время новых идей, свежих
-                            красок и вдохновения с Womazing!</p>
-                        <p class="offer__text">Мы обновили ассортимент - легендарные коллекции и новинки от
-                            отечественных дизайнеров.</p>
-                        <!-- text -->
-                        <!-- Slider componets -->
-                        <div class="offer__buttons">
-                            <button id="arrow-down-button">
-                                <img src="./assets/img/arrow-down.svg" alt="Arrow down button"
-                                    class="arrow-down-button-icon">
-                            </button>
-                            <a href="shop.html" class="button-open-shop">Открыть магазин</a>
-                        </div>
-                    </div>
-                    <div class="offer__dots">
-                        <div class="offer__dot active"></div>
-                        <div class="offer__dot "></div>
-                        <div class="offer__dot"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container container_flex">
+            <div class="logo">
+                <img src="./assets/img/dress.svg" alt="Dress" class="logo-image">
+                <p class="logo-text">Womazing</p>
+            </div>
+            <!-- Навигационное меню -->
+            <nav class="nav__menu">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item_active">
+                        <a class="menu__link menu__link_active" href="index.html">Главная</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="shop.html">Магазин</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">О бренде</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="call-order-button" id="call-order--button">
+                <div class="call-order-button-img"></div>
+            </button>
+            <a href="#" class="phone-number">+7 (495) 823-54-12</a>
+            <button class="cart-button" id="cart-button">
+                <img src="./assets/img/shopping-bags.svg" alt="Cart" class="cart-button-img">
+            </button>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <main class="main-page-content">
+        <!-- main-page section -->
+        <section class="main-page-first-display container">
+            <div class="offer-and-dots-wrapper">
+                <div class="offer">
+                    <!-- Slider componets -->
+                    <!-- titles -->
+                    <h1 class="offer__title">Что-то новенькое. Мы заждались тебя.</h1>
+                    <h1 class="offer__title active">Новые поступления в этом сезоне</h1>
+                    <h1 class="offer__title">Включай новый сезон с WOMAZING</h1>
+                    <!-- titles -->
+                    <!-- text -->
+                    <p class="offer__text">Надоело искать себя в сером городе? Настало время новых идей, свежих
+                        красок и вдохновения с Womazing!</p>
+                    <p class="offer__text active">Утонченные сочетания и бархатные оттенки - вот то, что вы искали в
+                        этом
+                        сезоне. Время исследовать.</p>
+                    <p class="offer__text">Мы обновили ассортимент - легендарные коллекции и новинки от
+                        отечественных дизайнеров.</p>
+                    <!-- text -->
+                    <!-- Slider componets -->
+                    <div class="offer__buttons">
+                        <button id="arrow-down-button">
+                            <img src="./assets/img/arrow-down.svg" alt="Arrow down button"
+                                class="arrow-down-button-icon">
+                        </button>
+                        <a href="shop.html" class="button-open-shop">Открыть магазин</a>
                     </div>
                 </div>
-                <div class="wrapper-main__right">
-                    <!-- Slider componets -->
-                    <!-- photo -->
-                    <div class="offer__photo-wrapper">
-                        <div class="offer__photo active first-photo"></div>
-                        <div class="offer__photo second-photo"></div>
-                        <div class="offer__photo trird-photo"></div>
-                        <!-- mini-photos -->
-                        <div class="offer__mini-photo-left"></div>
-                        <div class="offer__mini-photo-right"></div>
-                        <!-- mini-photos -->
-                    </div>
-                    <!-- photo -->
-                    <!-- Slider componets -->
+                <div class="offer__dots">
+                    <div class="offer__dot"></div>
+                    <div class="offer__dot active"></div>
+                    <div class="offer__dot"></div>
                 </div>
             </div>
+            <!-- Slider componets -->
+            <!-- photo -->
+            <div class="offer__photo-wrapper">
+                <div class="offer__photo-wrapper-bg"></div>
+                <div class="offer__photo second-photo"></div>
+                <div class="offer__photo active first-photo"></div>
+                <div class="offer__photo trird-photo"></div>
+                <!-- mini-photos -->
+                <div class="offer__mini-photo-left"></div>
+                <div class="offer__mini-photo-right"></div>
+                <!-- mini-photos -->
+            </div>
+            <!-- photo -->
+            <!-- Slider componets -->
+        </section>
+        <!-- main-page section -->
+        <!-- New collection section -->
+        <section class="new-collection">
+            <div class="container container_flex-column">
+                <h2 class="section-title">Новая коллекция</h2>
+                <div class="new-collection__products">
+                    <div class="card-product">
+                        <img src="./assets/img/Product 1.png" alt="USA T-shirt" class="card-product__img">
+                        <h4 class="card-product__name">Футболка USA</h4>
+                        <div class="wrapper-card-product__price">
+                            <p class="card-product__price card-product__price_td-line">$129</p>
+                            <p class="card-product__price">$129</p>
+                        </div>
+                    </div>
+                    <div class="card-product">
+                        <img src="./assets/img/Product 2.png" alt="Swimsuit" class="card-product__img">
+                        <h4 class="card-product__name">Купальник Glow</h4>
+                        <p class="card-product__price">$129</p>
+                    </div>
+                    <div class="card-product">
+                        <img src="./assets/img/Product 3.png" alt="Sweet Shot" class="card-product__img">
+                        <h4 class="card-product__name">Свитшот Sweet Shot</h4>
+                        <p class="card-product__price">$129</p>
+                    </div>
+                </div>
+                <a href="shop.html" class="button-open-shop button-open-shop_mod">Открыть магазин</a>
+            </div>
+        </section>
+        <!-- New collection section -->
+        <!-- Value section -->
+        <section class="values-section">
+            <div class="container">
+                <h2 class="section-title">Что для нас важно</h2>
+                <div class="value-wrapper">
+                    <div class="value">
+                        <img src="./assets/img/quality.png" alt="Качество" class="value__img">
+                        <h3 class="value__title">Качество</h3>
+                        <p class="value__text">Наши профессионалы работают на лучшем оборудовании для пошива вещей
+                            беспрецедентного качества
+                        </p>
+                    </div>
+                    <div class="value">
+                        <img src="./assets/img/speed.png" alt="Скорость">
+                        <h3 class="value__title">Скорость</h3>
+                        <p class="value__text">Благодаря нашей умной системе мы можем отшивать до 20-ти единиц продукции
+                            в наших собственных
+                            цехах
+                        </p>
+                    </div>
+                    <div class="value">
+                        <img src="./assets/img/hand.png" alt="Ответственность">
+                        <h3 class="value__title">Ответственность</h3>
+                        <p class="value__text">Мы заботимся о людях и планете. Безотходное производство и комфортные
+                            условия труда - все это
+                            Womazing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Value section -->
+        <!-- dream-team section -->
+        <section class="dream-team">
+            <div class="container">
+                <h2 class="section-title">Команда мечты Womazing</h2>
+                <div class="dream-team-wrapper">
+                    <div class="dream-team-photos">
+                        <div class="dream-team-photos__item dream-team_two"></div>
+                        <div class="dream-team-photos__item active dream-team_one"></div>
+                        <div class="dream-team-photos__item dream-team_three"></div>
+                        <div class="dream-team__dots">
+                            <div class="dream-team__dot"></div>
+                            <div class="dream-team__dot active"></div>
+                            <div class="dream-team__dot"></div>
+                        </div>
+                        <img src="./assets/img/Vector_left.png" alt="Vector left"
+                            class="dream-team-photos__vector-left">
+                        <img src="./assets/img/Vector_right.png" alt="Vector right"
+                            class="dream-team-photos__vector-right">
+                    </div>
+                    <div class="dream-team-photos__description">
+                        <h3 class="dream-team-photos__title">Для каждой</h3>
+                        <p class="dream-team-photos__text">Каждая девушка уникальна. Однако, мы схожи в миллионе
+                            мелочей. Womazing ищет эти мелочи и создает прекрасные вещи, которые выгодно подчеркивают
+                            достоинства каждой девушки.</p>
+                        <a href="" class="dream-team-photos__button">Подробнее о бренде</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
+        <!-- dream-team section -->
+    </main>
 
-
+    <footer class="footer">
+        <div class="container container_flex">
+            <div class="first-footer-wrapper">
+                <div class="logo">
+                    <img src="./assets/img/dress.svg" alt="Dress" class="logo-image">
+                    <p class="logo-text">Womazing</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__links-item">© Все права защищены</a>
+                    <a href="#" class="footer__links-item">Политика конфиденциальности</a>
+                    <a href="#" class="footer__links-item">Публичная оферта</a>
+                </div>
+            </div>
+            <div class="second-footer-wrapper">
+                <nav class="nav__menu nav__menu_footer">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item_active">
+                            <a class="menu__link menu__link_active" href="index.html">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="shop.html">Магазин</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="about.html">О бренде</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clothing-category">
+                    <a href="#" class="clothing-category__item">Пальто</a>
+                    <a href="#" class="clothing-category__item">Свитшоты</a>
+                    <a href="#" class="clothing-category__item">Кардиганы</a>
+                    <a href="#" class="clothing-category__item">Толстовки</a>
+                </div>
+            </div>
+            <div class="third-footer-wrapper">
+                <a href="#" class="footer__phone-number">+38 (044) 823-54-12</a>
+                <a href="#" class="footer__email">hello@womazing.com</a>
+                <div class="footer__socials">
+                    <a href="#" class="footer__socials-icon">
+                        <img src="./assets/img/instagram.svg" alt="Instagram" class="footer__socials-icon-img">
+                    </a>
+                    <a href="#" class="footer__socials-icon">
+                        <img src="./assets/img/facebook.svg" alt="Facebook" class="footer__socials-icon-img">
+                    </a>
+                    <a href="#" class="footer__socials-icon">
+                        <img src="./assets/img/twitter.svg" alt="Twitter" class="footer__socials-icon-img">
+                    </a>
+                </div>
+                <a href="#" class="payment-wrapper">
+                    <img src="./assets/img/visa-mastercard.png" alt="Payment" class="payment">
+                </a>
+            </div>
         </div>
-    </section>
+    </footer>
 
     <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/header-sroll.js"></script>
     <script src="./assets/js/modal-window.js"></script>
     <script src="./assets/js/offer-slider.js"></script>
+    <script src="./assets/js/dream-team-animation.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,17 @@
 .header {
+    font-family: 'Raleway', sans-serif;
     padding-top: 51px;
     position: sticky;
     top: 0;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    z-index: 5;
+}
+
+.header-scrolled {
     background-color: #fff;
+    pointer-events: all;
+    /* Включаем взаимодействие с элементом */
 }
 
 .logo {
@@ -25,7 +34,7 @@
     text-transform: uppercase;
 }
 
-.menu {
+.nav__menu {
     margin-left: 146px;
     padding: 3px 0 4px 0;
 }

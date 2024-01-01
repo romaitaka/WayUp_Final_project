@@ -10,6 +10,7 @@
     height: 100%;
     overflow: hidden;
     background: rgba(110, 156, 159, 0.95);
+    z-index: 10;
 }
 
 .modal-content {
@@ -27,6 +28,7 @@
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     line-height: 1.4em;
+    z-index: 10;
 }
 
 .close {

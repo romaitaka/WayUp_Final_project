@@ -1,0 +1,105 @@
+.footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4em;
+    padding-top: 101px;
+    padding-bottom: 97px;
+    color: #000;
+    background: #000;
+    background: #F1EADC;
+}
+
+.first-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.footer__links-item {
+    font-size: 13px;
+    letter-spacing: 0.26px;
+}
+
+.second-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 39px;
+    margin-left: 81px;
+    margin-right: auto;
+}
+
+.clothing-category {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin-left: 107px;
+}
+
+.clothing-category__item {
+    font-size: 13px;
+    letter-spacing: 0.26px;
+}
+
+.nav__menu_footer {
+    margin: 0;
+    padding: 3px 0 4px 0;
+}
+
+.third-footer-wrapper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__email {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    margin-bottom: 30px;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.footer__socials-icon {
+    width: 22px;
+    height: 22px;
+}
+
+.footer__socials-icon-img {
+    width: 22px;
+    height: 22px;
+}
+
+.footer__phone-number {
+    margin: 0;
+    margin-top: 3px;
+    margin-bottom: 9px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+.payment {
+    width: 68px;
+    height: 22px;
+}
+
+.payment-wrapper {
+    margin-bottom: auto;
+}

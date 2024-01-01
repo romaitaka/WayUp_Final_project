@@ -1,8 +1,9 @@
 @import url(normalize.css);
 @import url(header.css);
+@import url(footer.css);
 @import url(animation.css);
 @import url(modal-window.css);
-@import url(../css/Main-page-first-section.css);
+@import url(../css/Main-page.css);
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -13,6 +14,7 @@
     font-weight: 500;
     font-style: normal;
     line-height: 1.4em;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6, body, img, p, span {
@@ -34,6 +36,8 @@ li {
 }
 
 a {
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -67,3 +71,7 @@ button::-moz-focus-inner {
     align-items: center;
 }
 
+.container_flex-column {
+    display: flex;
+    flex-direction: column;
+}
