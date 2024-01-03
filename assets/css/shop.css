@@ -1,0 +1,61 @@
+.shop-hat {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.shop-hat__title {
+    color: #000;
+    font-size: 55px;
+    line-height: 1.1em;
+    letter-spacing: 1.1px;
+}
+
+.shop-hat__investment-wrapper {
+    font-size: 17px;
+    line-height: 1.4em;
+    letter-spacing: 0.34px;
+    display: flex;
+    gap: 13px;
+    margin-top: 26px;
+}
+
+.shop-hat__investment_act {
+    color: #909090;
+}
+
+.shop__content {
+    margin: 130px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop__product-categories {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+.shop__product-category-button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    /* button */
+    display: inline-block;
+    padding: 19px 65px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.shop__product-category-button.active {
+    background: #000;
+    color: #fff;
+}

@@ -27,12 +27,42 @@
 <link rel="stylesheet" href="./assets/css/main.css">
 
 <body class="body">
-
+    <!-- Preloder -->
     <div class="loader-wrapper">
         <div class="loader"></div>
     </div>
-
-
+    <!-- Preloder -->
+    <!-- First Modal-window -->
+    <div id="callbackModal" class="modal">
+        <!-- Содержимое модального окна -->
+        <div class="modal-content">
+            <img src="./assets/img/close.svg" alt="Закрыть" class="close">
+            <h3 class="modal-title">Заказать обратный звонок</h2>
+                <form id="callbackForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="Телефон">
+                    </div>
+                    <button type="submit" class="btn-submit">Заказать звонок</button>
+                </form>
+        </div>
+    </div>
+    <!-- First Modal-window -->
+    <!-- Second Modal-window -->
+    <div id="confirmationModal" class="modal">
+        <!-- Содержимое второго модального окна -->
+        <div class="modal-content confirmation-modal-content">
+            <p class="modal-title">Отлично! Мы скоро вам перезвоним.</p>
+            <button class="close-button">Закрыть</button>
+        </div>
+    </div>
+    <!-- Second Modal-window -->
+    <!-- Header -->
     <header class="header">
         <div class="container container_flex">
             <div class="logo">
@@ -40,7 +70,7 @@
                 <p class="logo-text">Womazing</p>
             </div>
             <!-- Навигационное меню -->
-            <nav class="menu">
+            <nav class="nav__menu">
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a class="menu__link" href="index.html">Главная</a>
@@ -65,42 +95,106 @@
             </button>
         </div>
     </header>
-
-    <!-- First Modal-window -->
-    <div id="callbackModal" class="modal">
-        <!-- Содержимое модального окна -->
-        <div class="modal-content">
-            <img src="./assets/img/close.svg" alt="Закрыть" class="close">
-            <h3 class="modal-title">Заказать обратный звонок</h2>
-                <form id="callbackForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Имя">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="E-mail">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Телефон">
-                    </div>
-                    <button type="submit" class="btn-submit">Заказать звонок</button>
-                </form>
+    <!-- Header -->
+    <section class="shop-hat">
+        <div class="container">
+            <h1 class="shop-hat__title">Магазин</h1>
+            <div class="shop-hat__investment-wrapper">
+                <p class="shop-hat__investment">Главная</p>
+                <p>—</p>
+                <p class="shop-hat__investment shop-hat__investment_act">Магазин</p>
+            </div>
         </div>
-    </div>
-    <!-- First Modal-window -->
-
-    <!-- Second Modal-window -->
-    <div id="confirmationModal" class="modal">
-        <!-- Содержимое второго модального окна -->
-        <div class="modal-content confirmation-modal-content">
-            <p class="modal-title">Отлично! Мы скоро вам перезвоним.</p>
-            <button class="close-button">Закрыть</button>
+    </section>
+    <main class="shop__content">
+        <div class="container">
+            <div class="shop__product-categories">
+                <a href="" class="shop__product-category-button active">Все</a>
+                <a href="" class="shop__product-category-button">Пальто</a>
+                <a href="" class="shop__product-category-button">Свитшоты</a>
+                <a href="" class="shop__product-category-button">Кардиганы</a>
+                <a href="" class="shop__product-category-button">Толстовки</a>
+            </div>
         </div>
-    </div>
-    <!-- Second Modal-window -->
+    </main>
 
 
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container container_flex">
+            <div class="first-footer-wrapper">
+                <div class="logo">
+                    <img src="./assets/img/dress.svg" alt="Dress" class="logo-image">
+                    <p class="logo-text">Womazing</p>
+                </div>
+                <div class="footer__links">
+                    <a href="#" class="footer__links-item">© Все права защищены</a>
+                    <a href="#" class="footer__links-item">Политика конфиденциальности</a>
+                    <a href="#" class="footer__links-item">Публичная оферта</a>
+                </div>
+            </div>
+            <div class="second-footer-wrapper">
+                <nav class="nav__menu nav__menu_footer">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="menu__item menu__item_active">
+                            <a class="menu__link menu__link_active" href="shop.html">Магазин</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="about.html">О бренде</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clothing-category">
+                    <a href="#" class="clothing-category__item">Пальто</a>
+                    <a href="#" class="clothing-category__item">Свитшоты</a>
+                    <a href="#" class="clothing-category__item">Кардиганы</a>
+                    <a href="#" class="clothing-category__item">Толстовки</a>
+                </div>
+            </div>
+            <div class="third-footer-wrapper">
+                <a href="#" class="footer__phone-number">+38 (044) 823-54-12</a>
+                <a href="#" class="footer__email">hello@womazing.com</a>
+                <div class="footer__socials">
+                    <a href="#" class="footer__socials-icon">
+                        <img src="./assets/img/instagram.svg" alt="Instagram" class="footer__socials-icon-img">
+                    </a>
+                    <a href="#" class="footer__socials-icon">
+                        <img src="./assets/img/facebook.svg" alt="Facebook" class="footer__socials-icon-img">
+                    </a>
+                    <a href="#" class="footer__socials-icon">
+                        <img src="./assets/img/twitter.svg" alt="Twitter" class="footer__socials-icon-img">
+                    </a>
+                </div>
+                <a href="#" class="payment-wrapper">
+                    <img src="./assets/img/visa-mastercard.png" alt="Payment" class="payment">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Scripts -->
     <script src="./assets/js/preloader.js"></script>
+    <script src="./assets/js/header-sroll.js"></script>
     <script src="./assets/js/modal-window.js"></script>
+    <script src="./assets/js/offer-slider.js"></script>
+    <script src="./assets/js/dream-team-animation.js"></script>
+    <script src="./assets/js/shop.js"></script>
+    <!-- Scripts -->
 </body>
 
 </html>

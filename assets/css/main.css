@@ -4,6 +4,7 @@
 @import url(animation.css);
 @import url(modal-window.css);
 @import url(../css/Main-page.css);
+@import url(../css/shop.css);
 
 *, *::before, *::after {
     box-sizing: border-box;

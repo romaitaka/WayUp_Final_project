@@ -183,48 +183,6 @@
     background-position: center;
 }
 
-/* slider animation */
-
-@keyframes slideOut {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(20px);
-        opacity: 0;
-    }
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-20px);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.offer__title, .offer__text, .offer__photo {
-    animation-duration: 0.5s;
-    /* Продолжительность анимации */
-    animation-fill-mode: forwards;
-    /* Анимация остается в конечном состоянии */
-}
-
-.slide-out {
-    animation-name: slideOut;
-}
-
-.slide-in {
-    animation-name: slideIn;
-}
-
-/* slider animation */
 
 /* First display section */
 
@@ -434,6 +392,14 @@
     background-image: url('../img/dream-team3.png');
 }
 
-
+.dream-team-photos__button {
+    color: #6E9C9F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0.34px;
+}
 
 /* dream-team section*/
