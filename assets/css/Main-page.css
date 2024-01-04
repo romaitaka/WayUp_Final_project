@@ -221,8 +221,52 @@
 }
 
 .card-product__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-product__image-wrapper {
+    position: relative;
     width: 350px;
     height: 478px;
+}
+
+.card-product__link {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 31px;
+    height: 22px;
+    transform: translate(-50%, -50%);
+    background: url('../img/product__link.svg') no-repeat center center;
+    background-size: contain;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 10;
+}
+
+.card-product__image-wrapper:hover .card-product__link {
+    opacity: 1;
+}
+
+.card-product__image-wrapper::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(110, 156, 159, 0.77);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 5;
+}
+
+.card-product__image-wrapper:hover::before {
+    opacity: 1;
 }
 
 .card-product__name {

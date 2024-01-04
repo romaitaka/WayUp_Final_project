@@ -40,6 +40,12 @@
     align-items: start;
 }
 
+.container_content {
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+}
+
 .shop__product-category-button {
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
@@ -58,4 +64,51 @@
 .shop__product-category-button.active {
     background: #000;
     color: #fff;
+}
+
+.shop__product-feed {
+    gap: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop__product-counter {
+    color: #808080;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0.34px;
+}
+
+.shop__product-feed-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 65px;
+}
+
+.shop__pages {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop__page {
+    display: block;
+    width: 41px;
+    padding: 8.5px 0;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.shop__page.active {
+    background: #000;
+    color: #FFFFFF;
+}
+
+.shop__next-page {
+    width: 20px;
+    height: 40px;
 }
