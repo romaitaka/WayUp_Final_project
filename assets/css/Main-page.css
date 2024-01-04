@@ -444,6 +444,13 @@
     font-weight: 500;
     line-height: 1.4em;
     letter-spacing: 0.34px;
+    height: 30px;
+}
+
+.dream-team-photos__button:hover {
+    width: 180px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CEDEDF;
 }
 
 /* dream-team section*/
