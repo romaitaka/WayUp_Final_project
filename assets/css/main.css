@@ -5,6 +5,7 @@
 @import url(modal-window.css);
 @import url(../css/Main-page.css);
 @import url(../css/shop.css);
+@import url(../css/one-item.css);
 
 *, *::before, *::after {
     box-sizing: border-box;
