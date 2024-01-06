@@ -1,0 +1,69 @@
+.contacts {
+    padding-top: 190px;
+    padding-bottom: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.contacts__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 84px;
+}
+
+.contacts__title {
+    font-size: 55px;
+    line-height: 1.1em;
+}
+
+.contacts__bread-crumbs {
+    gap: 13px;
+    display: flex;
+}
+
+.contacts__bread-crumbs {
+    font-size: 17px;
+}
+
+.contacts__bread-crumb-contacts {
+    color: #909090;
+    font-size: 17px;
+}
+
+.map {
+    width: 1110px;
+    height: 476px;
+}
+
+.contacts__info-wrapper {
+    gap: 98px;
+    display: flex;
+    padding-right: 39px;
+}
+
+.contacts__info-phone-wrapper,
+.contacts__info-email-wrapper,
+.contacts__info-adress-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.contacts__info-title {
+    font-size: 17px;
+}
+
+.contacts__info-link {
+    font-size: 20px;
+}
+
+.feedback-form {
+    
+}

@@ -1,0 +1,112 @@
+.about-brand {
+    padding-top: 190px;
+    padding-bottom: 130px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0.34px;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.about-brand__title {
+    font-size: 55px;
+    line-height: 1.1em;
+    margin-bottom: 26px;
+}
+
+.about-brand__bread-crumbs {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 84px;
+    font-size: 17px;
+}
+
+.about-brand__bread-crumb-main {
+    font-size: 17px;
+    color: #000;
+}
+
+
+.about-brand__bread-crumb-about {
+    color: #909090;
+}
+
+.idea-and-woman {
+    display: flex;
+    gap: 94px;
+}
+
+.idea-and-woman__img {
+    width: 442px;
+    height: 547px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/idea-and-woman-img.jpg');
+}
+
+.idea-and-woman-wrapper {
+    width: 542px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.idea-and-woman__title {
+    font-size: 25px;
+}
+
+.idea-and-woman__text {
+    font-size: 17px;
+    letter-spacing: 0.34px;
+}
+
+.magic-in-the-details {
+    display: flex;
+    gap: 123px;
+}
+
+.magic-in-the-details-wrapper {
+    width: 542px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.magic-in-the-details__title {
+    font-size: 25px;
+}
+
+.magic-in-the-details__text {
+    font-size: 17px;
+    letter-spacing: 0.34px;
+}
+
+.magic-in-the-details__img {
+    width: 442px;
+    height: 547px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/magic-in-the-details__img.jpg');
+}
+
+.go-to-the-store-button {
+    align-self: center;
+    display: inline-block;
+    padding: 22px 50px;
+    background-color: #6E9C9F;
+    color: #fff;
+}
+
+.go-to-the-store-button:hover {
+    background-color: #509498;
+}
