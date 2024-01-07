@@ -1,0 +1,222 @@
+.cart-page-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 190px;
+    padding-bottom: 130px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.cart-page__title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin-bottom: 84px;
+}
+
+.cart-page__title {
+    font-size: 55px;
+    line-height: 1.1em;
+}
+
+.cart-page__bread-crumbs {
+    display: flex;
+    gap: 13px;
+    font-size: 17px;
+}
+
+.cart-page__bread-crumbs-main {
+    color: #000;
+}
+
+.cart-page__bread-crumbs-cart {
+    color: #909090;
+}
+
+.cart-page__table-header {
+    display: flex;
+    margin-top: 130px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 49px;
+}
+
+.cart-page__table-header-product {
+    margin-right: 416px;
+}
+
+.cart-page__table-header-price {
+    margin-right: 139px;
+}
+
+.cart-page__table-header-count {
+    margin-right: 167px;
+}
+
+.cart-page__table-header-count {}
+
+.cart-page__one-item-in-the-cart-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 72px;
+}
+
+.cart-page__close-button {
+    margin: 0;
+    padding: 0;
+    margin-right: 45px;
+}
+
+.cart-page__close-button-img {
+    width: 12px;
+    height: 12px;
+}
+
+.cart-page__one-item-in-the-cart-img {
+    width: 125px;
+    height: 179px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/cart__one-item.jpg');
+    margin-right: 36px;
+}
+
+.cart-page__one-item-in-the-cart-product-name {
+    font-size: 17px;
+    margin-right: 134px;
+}
+
+.cart-page__one-item-in-the-cart-price {
+    font-size: 17px;
+    margin-right: 151px;
+}
+
+.cart-page__one-item-in-the-cart-count {
+    width: 47px;
+    padding: 8px 0px 11px 0px;
+    border: 1px solid #AFAFAF;
+    text-align: center;
+    margin-right: 238px;
+    font-size: 20px;
+}
+
+.cart-page__one-item-in-the-cart-count-value {
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.cart-page__one-item-in-the-cart-total {
+    font-size: 17px;
+}
+
+.cart-page__managment-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 88px;
+}
+
+.cart-page__coupon-input {
+    color: #868686;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 23px;
+    margin-top: 21px;
+    margin-right: 16px;
+    width: 255px;
+}
+
+.apply-a-coupon-button {
+    display: inline-block;
+    padding: 22px 50px;
+    color: #6E9C9F;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.39em;
+    border: 1px solid #6E9C9F;
+    margin-right: 337px;
+}
+
+.apply-a-coupon-button:hover {
+    background-color: #6E9C9F;
+    color: #FFFFFF;
+}
+
+.refresh-cart-button {
+    display: inline-block;
+    padding: 22px 50px;
+    color: #6E9C9F;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.39em;
+    border: 1px solid #6E9C9F;
+}
+
+.refresh-cart-button:hover {
+    background-color: #6E9C9F;
+    color: #FFFFFF;
+}
+
+.cart-page__sub-total-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: start;
+    margin-right: 0;
+    margin-left: auto;
+    width: 538px;
+}
+
+.cart-page__summary-wrapper {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.cart-page__summary-title,
+.cart-page__summary-price {
+    font-size: 17px;
+}
+
+.cart-page__the-final-price-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.cart-page__the-final-price {
+    display: inline-flex;
+    padding: 16px 51px 17px 31px;
+    align-items: flex-start;
+    gap: 69px;
+    background: #F1EADC;
+}
+
+.cart-page__the-final-price-title,
+.cart-page__the-final-price-total {
+    font-size: 25px;
+}
+
+.place-an-order-button {
+    display: inline-block;
+    padding: 22px 50px;
+    text-align: center;
+    background-color: #6E9C9F;
+    color: #FFF;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.39em;
+}
+
+.place-an-order-button:hover {
+    background: #509498;
+}
+

@@ -8,6 +8,7 @@
 @import url(../css/one-item.css);
 @import url(../css/about-brand.css);
 @import url(../css/contacts.css);
+@import url(../css/cart-page.css);
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -78,4 +79,14 @@ button::-moz-focus-inner {
 .container_flex-column {
     display: flex;
     flex-direction: column;
+}
+
+body input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
 }

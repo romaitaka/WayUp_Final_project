@@ -15,11 +15,9 @@
 <meta property="og:type" content="website">
 <!-- <meta property="og:url" content="http://www.yourwebsite.com"> -->
 <!-- <meta property="og:image" content="http://www.yourwebsite.com/images/og-image.jpg"> -->
-
 <!-- Adding favicon -->
 <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
 <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-
 <!-- <link rel="canonical" href="http://www.yourwebsite.com"> -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,14 +70,14 @@
             <!-- Навигационное меню -->
             <nav class="nav__menu">
                 <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="index.html">Главная</a>
+                    <li class="menu__item menu__item_active">
+                        <a class="menu__link menu__link_active" href="index.html">Главная</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="shop.html">Магазин</a>
                     </li>
-                    <li class="menu__item menu__item_active">
-                        <a class="menu__link menu__link_active" href="about.html">О бренде</a>
+                    <li class="menu__item">
+                        <a class="menu__link" href="about.html">О бренде</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="contacts.html">Контакты</a>
@@ -96,47 +94,52 @@
         </div>
     </header>
     <!-- Header -->
-    <main class="about-brand container">
-        <div class="about-brand__title-wrapper">
-            <h1 class="about-brand__title">О бренде</h1>
-            <div class="about-brand__bread-crumbs">
-                <p class="about-brand__bread-crumb-main">Главная</p>
+    <main class="cart-page-content container">
+        <div class="cart-page__title-wrapper">
+            <h1 class="cart-page__title">Корзина</h1>
+            <div class="cart-page__bread-crumbs">
+                <p class="cart-page__bread-crumbs-main">Главная</p>
                 <p>—</p>
-                <p class="about-brand__bread-crumb-about">О бренде</p>
+                <p class="cart-page__bread-crumbs-cart">Корзина</p>
             </div>
         </div>
-        <section class="idea-and-woman">
-            <div class="idea-and-woman__img"></div>
-            <div class="idea-and-woman-wrapper">
-                <h3 class="idea-and-woman__title">Идея и женщина</h3>
-                <p class="idea-and-woman__text">Womazing была основана в 2010-ом и стала одной из самых успешных
-                    компаний нашей страны. Как и многие итальянские фирмы, Womazing остаётся семейной компанией, хотя ни
-                    один из членов семьи не является модельером.<br>
-                    <br>
-                    Мы действуем по успешной формуле, прибегая к услугам
-                    известных модельеров для создания своих коллекций. Этот метод был описан критиком моды Колином
-                    Макдауэллом как форма дизайнерского со-творчества, характерная для ряда итальянских prêt-a-porter
-                    компаний.
-                </p>
+        <div class="cart-page__table-header">
+            <h4 class="cart-page__table-header-product">Товар</h4>
+            <h4 class="cart-page__table-header-price">Цена</h4>
+            <h4 class="cart-page__table-header-count">Количество</h4>
+            <h4 class="cart-page__table-header-count">Всего</h4>
+        </div>
+        <div class="cart-page__one-item-in-the-cart-wrapper">
+            <button class="cart-page__close-button">
+                <img src="./assets/img/cart__close.svg" alt="Close button" class="cart-page__close-button-img">
+            </button>
+            <div class="cart-page__one-item-in-the-cart-img"></div>
+            <p class="cart-page__one-item-in-the-cart-product-name">Футболка USA</p>
+            <p class="cart-page__one-item-in-the-cart-price">$129</p>
+            <div class="cart-page__one-item-in-the-cart-count">
+                <input type="number" value="1" min="1" class="cart-page__one-item-in-the-cart-count-value">
             </div>
-        </section>
-        <section class="magic-in-the-details">
-            <div class="magic-in-the-details-wrapper">
-                <h3 class="magic-in-the-details__title">Магия в деталях</h3>
-                <p class="magic-in-the-details__text">Первый магазин Womazing был открыт в маленьком городке на севере
-                    страны в 2010-ом году. Первая коллекция состояла из двух пальто и костюма, которые были копиями
-                    парижских моделей.<br>
-                    <br>
-                    Несмотря на то, что по образованию основательница была адвокатом, ее семья всегда
-                    была тесно связана с шитьём (прабабушка основательницы шила одежду для женщин, а мать основала
-                    профессиональную школу кроя и шитья). Стремление производить одежду для масс несло в себе большие
-                    перспективы, особенно в то время, когда высокая мода по-прежнему доминировала, а рынка качественного
-                    prêt-a-porter попросту не существовало.
-                </p>
+            <p class="cart-page__one-item-in-the-cart-total">$129</p>
+        </div>
+        <div class="cart-page__managment-wrapper">
+            <input type="text" placeholder="Введите купон" class="cart-page__coupon-input">
+            <button class="apply-a-coupon-button">Применить купон</button>
+            <button class="refresh-cart-button">Обновить корзину</button>
+        </div>
+        <div class="cart-page__sub-total-wrapper">
+            <div class="cart-page__summary-wrapper">
+                <p class="cart-page__summary-title">Подытог:</p>
+                <p class="cart-page__summary-price">$129</p>
             </div>
-            <div class="magic-in-the-details__img"></div>
-        </section>
-        <a href="shop.html" class="go-to-the-store-button">Перейти в магазин</a>
+            <div class="cart-page__the-final-price-wrapper">
+                <div class="cart-page__the-final-price">
+                    <h3 class="cart-page__the-final-price-title">Итого:</h3>
+                    <p class="cart-page__the-final-price-total">$129</p>
+                </div>
+                <button class="place-an-order-button">Оформить заказ</button>
+            </div>
+
+        </div>
     </main>
     <!-- Footer -->
     <footer class="footer">
@@ -155,14 +158,14 @@
             <div class="second-footer-wrapper">
                 <nav class="nav__menu nav__menu_footer">
                     <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="index.html">Главная</a>
+                        <li class="menu__item menu__item_active">
+                            <a class="menu__link menu__link_active" href="index.html">Главная</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="shop.html">Магазин</a>
                         </li>
-                        <li class="menu__item menu__item_active">
-                            <a class="menu__link menu__link_active" href="about.html">О бренде</a>
+                        <li class="menu__item">
+                            <a class="menu__link" href="about.html">О бренде</a>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="contacts.html">Контакты</a>
@@ -205,6 +208,7 @@
     <script src="./assets/js/dream-team-animation.js"></script>
     <script src="./assets/js/shop.js"></script>
     <script src="./assets/js/one-item.js"></script>
+    <script src="./assets/js/cart.js"></script>
     <!-- Scripts -->
 </body>
 
