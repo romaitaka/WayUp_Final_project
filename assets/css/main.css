@@ -9,6 +9,8 @@
 @import url(../css/about-brand.css);
 @import url(../css/contacts.css);
 @import url(../css/cart-page.css);
+@import url(../css/checkout.css);
+@import url(../css/success.css);
 
 *, *::before, *::after {
     box-sizing: border-box;
