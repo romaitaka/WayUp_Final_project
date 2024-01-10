@@ -1,0 +1,38 @@
+.checkout__content {
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 214px;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4em;
+}
+
+.checout__hat-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.checkout__title {
+    font-size: 55px;
+    line-height: 1.1em;
+}
+
+.checkout__bread-crumbs {
+    display: flex;
+    gap: 13px;
+}
+
+.checkout__bread-crumbs-main {
+    color: #000;
+    font-size: 17px;
+}
+
+.checkout__bread-crumbs-checkout-order {
+    color: #909090;
+    font-size: 17px;
+}
+
