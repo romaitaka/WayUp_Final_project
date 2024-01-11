@@ -47,7 +47,8 @@
     letter-spacing: 0.3px;
 }
 
-.menu__item_active, .menu__link_active {
+.menu__item_active,
+.menu__link_active {
     color: #6E9C9F;
     font-weight: 700;
 }
@@ -85,4 +86,26 @@
 
 .cart-button {
     margin: 2px 0;
+}
+
+/* Responsive */
+/* Large 1199 - 992 px */
+
+@media screen and (max-width: 1199px) {
+    .logo {
+        margin-left: auto;
+    }
+
+    .nav__menu {
+        margin-left: auto;
+    }
+
+    .call-order-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .phone-number {
+        display: none;
+    }
 }

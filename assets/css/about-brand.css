@@ -110,3 +110,13 @@
 .go-to-the-store-button:hover {
     background-color: #509498;
 }
+
+@media screen and (max-width: 1199px) {
+    .go-to-the-store-button {
+        margin-bottom: 130px;
+    }
+
+    .about-brand__title {
+        margin-top: 190px;
+    }
+}

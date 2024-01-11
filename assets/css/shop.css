@@ -112,3 +112,9 @@
     width: 20px;
     height: 40px;
 }
+
+@media screen and (max-width: 1199px) {
+    .shop__product-category-button {
+        padding: 19px 54px;
+    }
+}

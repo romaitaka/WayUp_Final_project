@@ -454,3 +454,64 @@
 }
 
 /* dream-team section*/
+
+/* Responsive */
+/* Large 1199 - 992 px */
+
+@media screen and (max-width: 1199px) {
+    .offer-and-dots-wrapper {
+        width: 35%;
+    }
+
+    .offer__title {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .offer__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .offer__photo-wrapper {
+        margin-top: 100px;
+        margin-bottom: 0;
+        margin-right: 40px;
+        width: 342px;
+        height: 538px;
+    }
+
+    .offer__photo {
+        width: 342px;
+        height: 538px;
+    }
+
+    .offer__mini-photo-left {
+        width: 158px;
+        height: 268px;
+        bottom: -60px;
+        left: -85px;
+    }
+
+    .offer__mini-photo-right {
+        width: 164px;
+        height: 164px;
+        top: 123px;
+        right: -55px;
+    }
+
+    .card-product__image-wrapper {
+        position: relative;
+        width: 291px;
+        height: auto;
+    }
+
+    .value {
+        width: 291px;
+    }
+
+    .dream-team-photos__item {
+        width: 608px;
+        height: 406px;
+    }
+}

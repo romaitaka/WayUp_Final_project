@@ -10,7 +10,7 @@
     line-height: 1.4em;
 }
 
-.checout__hat-wrapper {
+.checkout__hat-wrapper {
     display: flex;
     flex-direction: column;
     gap: 26px;
@@ -189,4 +189,10 @@
 
 .place-the-order:hover {
     background-color: #509498;
+}
+
+@media screen and (max-width: 1199px) {
+    .checkout__hat-wrapper {
+        margin-top: 190px;
+    }
 }

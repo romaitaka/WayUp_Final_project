@@ -12,9 +12,13 @@
 @import url(../css/checkout.css);
 @import url(../css/success.css);
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
+
 
 .body {
     font-family: 'Raleway', sans-serif;
@@ -24,13 +28,23 @@
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, body, img, p, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+img,
+p,
+span {
     margin: 0;
     padding: 0;
 }
 
 /* Обнуление стилей для всех списков */
-ul, ol {
+ul,
+ol {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -76,6 +90,7 @@ button::-moz-focus-inner {
 .container_flex {
     display: flex;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .container_flex-column {
@@ -91,4 +106,21 @@ body input {
     background: none;
     font-family: inherit;
     font-size: inherit;
+}
+
+/* Responsive */
+/* Large 1199 - 992 px */
+
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 960px;
+        padding: 0 5px;
+        overflow-x: hidden;
+    }
+
+    .container_flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
