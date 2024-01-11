@@ -218,6 +218,7 @@
 
 .place-an-order-button:hover {
     background: #509498;
+<<<<<<< HEAD
 }
 
 @media screen and (max-width: 1199px) {
@@ -275,4 +276,6 @@
     .cart-page__the-final-price-wrapper {
         margin-bottom: 130px;
     }
+=======
+>>>>>>> 24fdd1c7b957549a84767f2871e017950a276cc3
 }
