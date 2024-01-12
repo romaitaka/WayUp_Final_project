@@ -1,5 +1,4 @@
 .checkout__content {
-    padding-top: 190px;
     display: flex;
     flex-direction: column;
     gap: 214px;
@@ -11,6 +10,7 @@
 }
 
 .checkout__hat-wrapper {
+    margin-top: 190px;
     display: flex;
     flex-direction: column;
     gap: 26px;

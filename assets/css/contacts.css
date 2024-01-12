@@ -1,5 +1,4 @@
 .contacts {
-    padding-top: 190px;
     padding-bottom: 130px;
     display: flex;
     flex-direction: column;
@@ -11,7 +10,8 @@
     line-height: 1.4em;
 }
 
-.contacts__title-wrapper {
+.contacts__hat {
+    margin-top: 190px;
     display: flex;
     flex-direction: column;
     gap: 26px;

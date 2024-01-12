@@ -29,7 +29,7 @@
 }
 
 .shop__content {
-    margin: 130px 0;
+    padding-bottom: 130px;
     display: flex;
     flex-direction: column;
 }

@@ -1,7 +1,6 @@
 .cart-page-content {
     display: flex;
     flex-direction: column;
-    padding-top: 190px;
     padding-bottom: 130px;
     color: #000;
     font-family: 'Raleway', sans-serif;
@@ -10,7 +9,8 @@
     line-height: 1.4em;
 }
 
-.cart-page__title-wrapper {
+.cart-page__hat {
+    margin-top: 190px;
     display: flex;
     flex-direction: column;
     gap: 26px;
@@ -218,14 +218,10 @@
 
 .place-an-order-button:hover {
     background: #509498;
-<<<<<<< HEAD
+    <<<<<<< HEAD
 }
 
 @media screen and (max-width: 1199px) {
-    .cart-page__title-wrapper {
-        margin-top: 130px;
-    }
-
     .cart-page__table-header {
         justify-content: space-between;
     }
@@ -276,6 +272,4 @@
     .cart-page__the-final-price-wrapper {
         margin-bottom: 130px;
     }
-=======
->>>>>>> 24fdd1c7b957549a84767f2871e017950a276cc3
 }
