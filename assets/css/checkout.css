@@ -164,15 +164,39 @@
     font-size: 25px;
 }
 
-.checkout__pay-var-option-check-box-img {
+.checkout__pay-var-option-check-box {
     width: 22px;
     height: 22px;
-    padding: 1px 0;
+    margin: 1px 0;
+    border: 1px solid #000;
+    position: relative;
+    /* Добавляем относительное позиционирование для базового элемента */
+    background-color: transparent;
+    /* Убираем фон, чтобы он был прозрачным */
 }
+
+.checkout__pay-var-option-check-box.active::after {
+    content: '';
+    /* Необходимо для создания псевдоэлемента */
+    position: absolute;
+    /* Абсолютное позиционирование относительно родительского элемента */
+    top: 5px;
+    /* Расстояние до верхней границы */
+    left: 5px;
+    /* Расстояние до левой границы */
+    right: 5px;
+    /* Расстояние до правой границы */
+    bottom: 5px;
+    /* Расстояние до нижней границы */
+    background-color: #000;
+    /* Цвет фона для псевдоэлемента */
+}
+
 
 .checkout__pay-var-option {
     display: flex;
     gap: 14px;
+    align-items: center;
 }
 
 .checkout__pay-var-text {
