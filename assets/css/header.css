@@ -79,7 +79,15 @@
     font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.3px;
-    margin: 3px auto 4px 0;
+    /* margin: 3px auto 4px 0; */
+    margin-right: auto;
+    height: 29px;
+}
+
+.phone-number:hover {
+    width: 128px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CEDEDF;
 }
 
 .cart-button-img {

@@ -218,7 +218,7 @@ th, td {
 .cart-page__the-final-price {
     display: inline-flex;
     padding: 16px 51px 17px 31px;
-    align-items: flex-start;
+    align-items: center;
     gap: 69px;
     background: #F1EADC;
 }

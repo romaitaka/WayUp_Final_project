@@ -1,89 +1,78 @@
-// Получаем массивы всех фотографий и дотов
-var photos = document.querySelectorAll('.dream-team-photos__item');
-var dots = document.querySelectorAll('.dream-team__dot');
+document.addEventListener('DOMContentLoaded', function() {
+  // Определение переменных для элементов слайдера
+  var photos = document.querySelectorAll('.dream-team-photos__item');
+  var dots = document.querySelectorAll('.dream-team__dot');
+  var arrowLeft = document.querySelector('.dream-team-photos__vector-left');
+  var arrowRight = document.querySelector('.dream-team-photos__vector-right');
+  var autoScrollInterval;
 
-// Функция для удаления класса 'active' у всех элементов
-function removeActiveClass(elements) {
-  elements.forEach(function(element) {
-    element.classList.remove('active');
-  });
-}
-
-// Функция для добавления класса 'active' к текущему элементу
-function addActiveClass(element) {
-  element.classList.add('active');
-}
-
-// Функция для установки активного элемента
-function setActive(index) {
-  // Сначала удаляем класс 'active' у всех фото и дотов
-  removeActiveClass(photos);
-  removeActiveClass(dots);
-  // Затем добавляем класс 'active' к текущим фото и доту
-  addActiveClass(photos[index]);
-  addActiveClass(dots[index]);
-}
-
-// Добавляем обработчики событий для дотов
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => setActive(index));
-});
-
-// Функция для переключения фотографии вперед или назад
-function switchPhoto(forward) {
-  // Находим индекс текущей активной фотографии
-  var currentIndex = Array.from(photos).findIndex(photo => photo.classList.contains('active'));
-  var nextIndex;
-
-  if (forward) {
-    // Вычисляем индекс следующей фотографии
-    nextIndex = (currentIndex + 1) % photos.length;
-  } else {
-    // Вычисляем индекс предыдущей фотографии
-    nextIndex = (currentIndex - 1 + photos.length) % photos.length;
+  // Удаление класса 'active' у всех элементов в переданном списке
+  function removeActiveClass(elements) {
+      elements.forEach(function(element) {
+          element.classList.remove('active');
+      });
   }
 
-  setActive(nextIndex);
-}
+  // Добавление класса 'active' к указанному элементу
+  function addActiveClass(element) {
+      element.classList.add('active');
+  }
 
-// Обработчики событий для стрелок
-var arrowLeft = document.querySelector('.dream-team-photos__vector-left');
-var arrowRight = document.querySelector('.dream-team-photos__vector-right');
+  // Установка активного элемента для слайдера
+  function setActive(index) {
+      removeActiveClass(photos);
+      removeActiveClass(dots);
+      addActiveClass(photos[index]);
+      addActiveClass(dots[index]);
+  }
 
-arrowLeft.addEventListener('click', () => switchPhoto(false)); // Переключаем на предыдущую фотографию
-arrowRight.addEventListener('click', () => switchPhoto(true)); // Переключаем на следующую фотографию
+  // Переключение фотографии вперед или назад
+  function switchPhoto(forward) {
+      var currentIndex = Array.from(photos).findIndex(photo => photo.classList.contains('active'));
+      var nextIndex = forward ? (currentIndex + 1) % photos.length : (currentIndex - 1 + photos.length) % photos.length;
+      setActive(nextIndex);
+  }
 
-// Функция для переключения на следующую фотографию
-function switchToNextPhoto() {
-  switchPhoto(true);
-}
+  // Остановка автоматической прокрутки слайдера
+  function stopAutoScroll() {
+      clearInterval(autoScrollInterval);
+  }
 
-// Устанавливаем интервал для автоматической прокрутки
-var autoScrollInterval = setInterval(switchToNextPhoto, 2000); // 2000 мс = 2 секунды
+  // Запуск автоматической прокрутки слайдера
+  function startAutoScroll() {
+      autoScrollInterval = setInterval(() => switchPhoto(true), 2000);
+  }
 
-// Остановка автоматической прокрутки при взаимодействии пользователя
-function stopAutoScroll() {
-  clearInterval(autoScrollInterval);
-}
+  // Установка событий наведения для стрелок слайдера
+  function setArrowHover(arrow, hoverSrc, originalSrc) {
+      arrow.addEventListener('mouseenter', function() {
+          this.src = hoverSrc;
+      });
+      arrow.addEventListener('mouseleave', function() {
+          this.src = originalSrc;
+      });
+  }
 
-// Возобновление автоматической прокрутки
-function startAutoScroll() {
-  autoScrollInterval = setInterval(switchToNextPhoto, 2000);
-}
+  // Назначение обработчиков событий для точек (дотов)
+  dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => setActive(index));
+  });
 
-// Добавляем события для остановки и возобновления автоматической прокрутки
-photos.forEach(photo => {
-  photo.addEventListener('mouseenter', stopAutoScroll);
-  photo.addEventListener('mouseleave', startAutoScroll);
+  // Назначение обработчиков событий для стрелок слайдера
+  arrowLeft.addEventListener('click', () => switchPhoto(false));
+  arrowRight.addEventListener('click', () => switchPhoto(true));
+
+  // Создание массива элементов, которые останавливают и возобновляют автопрокрутку
+  var elementsToPause = [...photos, ...dots, arrowLeft, arrowRight];
+  elementsToPause.forEach(element => {
+      element.addEventListener('mouseenter', stopAutoScroll);
+      element.addEventListener('mouseleave', startAutoScroll);
+  });
+
+  // Настройка эффекта наведения на стрелки слайдера
+  setArrowHover(arrowLeft, './assets/img/Vector_left--hover.svg', './assets/img/Vector_left.svg');
+  setArrowHover(arrowRight, './assets/img/Vector_rightt--hover.svg', './assets/img/Vector_right.svg');
+
+  // Инициализация автоматической прокрутки слайдера
+  startAutoScroll();
 });
-
-dots.forEach(dot => {
-  dot.addEventListener('mouseenter', stopAutoScroll);
-  dot.addEventListener('mouseleave', startAutoScroll);
-});
-
-arrowLeft.addEventListener('mouseenter', stopAutoScroll);
-arrowRight.addEventListener('mouseenter', stopAutoScroll);
-
-arrowLeft.addEventListener('mouseleave', startAutoScroll);
-arrowRight.addEventListener('mouseleave', startAutoScroll);
