@@ -36,34 +36,60 @@
     color: #909090;
 }
 
-.cart-page__table-header {
-    display: flex;
-    margin-top: 130px;
-    padding-bottom: 26px;
-    border-bottom: 1px solid #CCCCCC;
-    width: 100%;
-    font-size: 20px;
-    margin-bottom: 49px;
+table {
+    border-collapse: collapse;
 }
 
+th, td {
+    border: 1px solid transparent;
+}
+
+.cart-page__table-container {
+    margin-top: 130px;
+    margin-bottom: 72px;
+}
+
+.cart-page__table-header {
+    width: 100%;
+    text-align: left;
+}
+
+.cart-page__table-header th {
+    padding-bottom: 26px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+
 .cart-page__table-header-product {
-    margin-right: 416px;
+    width: 475px;
 }
 
 .cart-page__table-header-price {
-    margin-right: 139px;
+    width: 190px;
 }
 
 .cart-page__table-header-count {
-    margin-right: 167px;
+    width: 285px;
 }
 
-.cart-page__table-header-count {}
+.cart-page__table-header-count-total {
+    width: 158px;
+}
+
+.cart-page__table-string {
+    align-items: center;
+
+}
+
+.cart-page__table-string td {
+    padding-top: 49px;
+    vertical-align: middle;
+}
 
 .cart-page__one-item-in-the-cart-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 72px;
+    width: 475px;
 }
 
 .cart-page__close-button {
@@ -96,19 +122,17 @@
     margin-right: 151px;
 }
 
-.cart-page__one-item-in-the-cart-count {
-    width: 47px;
-    padding: 8px 0px 11px 0px;
-    border: 1px solid #AFAFAF;
-    text-align: center;
-    margin-right: 238px;
-    font-size: 20px;
-}
+.cart-page__table-string-quantity {}
 
 .cart-page__one-item-in-the-cart-count-value {
     width: 100%;
     border: none;
     text-align: center;
+    width: 47px;
+    height: 28px;
+    font-size: 20px;
+    border: 1px solid #AFAFAF;
+    padding: 8px 0px 11px 0px;
 }
 
 .cart-page__one-item-in-the-cart-total {
@@ -221,53 +245,6 @@
 }
 
 @media screen and (max-width: 1199px) {
-    .cart-page__table-header {
-        justify-content: space-between;
-    }
-
-    .cart-page__table-header-product {
-        margin-right: 0;
-    }
-
-    .cart-page__table-header-price {
-        margin-right: 0;
-    }
-
-    .cart-page__table-header-count {
-        margin-right: 0;
-    }
-
-    .cart-page__one-item-in-the-cart-wrapper {
-        justify-content: space-between;
-    }
-
-    .cart-page__close-button {
-        margin-right: 15px;
-    }
-
-    .cart-page__one-item-in-the-cart-img {
-        margin-right: 15px;
-        width: 104px;
-        height: 149px;
-    }
-
-    .cart-page__one-item-in-the-cart-product-name {
-        margin-right: 20px;
-    }
-
-    .cart-page__one-item-in-the-cart-price {
-        margin-right: auto;
-    }
-
-    .cart-page__one-item-in-the-cart-count {
-        margin-right: auto;
-
-    }
-
-    .apply-a-coupon-button {
-        margin-right: auto;
-    }
-
     .cart-page__the-final-price-wrapper {
         margin-bottom: 130px;
     }

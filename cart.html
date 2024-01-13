@@ -105,24 +105,36 @@
                 <p class="cart-page__bread-crumbs-cart">Корзина</p>
             </div>
         </div>
-        <div class="cart-page__table-header">
-            <h4 class="cart-page__table-header-product">Товар</h4>
-            <h4 class="cart-page__table-header-price">Цена</h4>
-            <h4 class="cart-page__table-header-count">Количество</h4>
-            <h4 class="cart-page__table-header-count">Всего</h4>
+
+
+        <div class="cart-page__table-container">
+            <table>
+                <tr class="cart-page__table-header">
+                    <th class="cart-page__table-header-product">Товар</th>
+                    <th class="cart-page__table-header-price">Цена</th>
+                    <th class="cart-page__table-header-count">Количество</th>
+                    <th class="cart-page__table-header-count-total">Всего</th>
+                </tr>
+                <tr class="cart-page__table-string">
+                    <td class="cart-page__one-item-in-the-cart-wrapper">
+                        <button class="cart-page__close-button">
+                            <img src="./assets/img/cart__close.svg" alt="Close button"
+                                class="cart-page__close-button-img">
+                        </button>
+                        <div class="cart-page__one-item-in-the-cart-img"></div>
+                        <p class="cart-page__one-item-in-the-cart-product-name">Футболка USA</p>
+
+                    </td>
+                    <td class="cart-page__table-string-price">$129</td>
+                    <td class="cart-page__table-string-quantity">
+                        <input type="number" value="1" min="1" class="cart-page__one-item-in-the-cart-count-value">
+                    </td>
+                    <td class="cart-page__table-string-total">$129</td>
+                </tr>
+            </table>
         </div>
-        <div class="cart-page__one-item-in-the-cart-wrapper">
-            <button class="cart-page__close-button">
-                <img src="./assets/img/cart__close.svg" alt="Close button" class="cart-page__close-button-img">
-            </button>
-            <div class="cart-page__one-item-in-the-cart-img"></div>
-            <p class="cart-page__one-item-in-the-cart-product-name">Футболка USA</p>
-            <p class="cart-page__one-item-in-the-cart-price">$129</p>
-            <div class="cart-page__one-item-in-the-cart-count">
-                <input type="number" value="1" min="1" class="cart-page__one-item-in-the-cart-count-value">
-            </div>
-            <p class="cart-page__one-item-in-the-cart-total">$129</p>
-        </div>
+
+
         <div class="cart-page__managment-wrapper">
             <input type="text" placeholder="Введите купон" class="cart-page__coupon-input">
             <button class="apply-a-coupon-button">Применить купон</button>

@@ -1,8 +1,7 @@
 // Существующий код для изменения хедера при прокрутке
 window.addEventListener('scroll', function() {
     var header = document.querySelector('.header');
-    var headerHeight = header.offsetHeight;
-    if (window.pageYOffset > headerHeight) {
+    if (window.pageYOffset > 0) { // Проверяем, что страница прокручена вниз хотя бы на 1px
         header.classList.add('header-scrolled');
     } else {
         header.classList.remove('header-scrolled');
