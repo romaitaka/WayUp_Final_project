@@ -89,68 +89,56 @@
     gap: 145px;
 }
 
-.checkout__your-order-title {
-    font-size: 25px;
-    margin-bottom: 47px;
-    padding-left: 18px;
-}
+
+
 
 .checkout__your-order {
-    display: flex;
-    flex-direction: column;
+    width: 284px;
+    margin-bottom: 15px;
+    /* Отступ снизу, если нужно */
 }
 
-.checkout__your-order-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 73px;
+.checkout__your-order-title {
+    font-size: 25px;
+    margin: 0 0 32px 18px;
 }
 
-.checkout__your-order-table-items-left {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 15px;
-    align-items: start;
-    padding-left: 18px;
+.checkout__your-order-table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.checkout__your-order-table-items-right {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 15px;
-    align-items: start;
-    padding-right: 11px;
-}
-
-.checkout__your-order-table-item {
+.checkout__your-order-table td {
     font-size: 20px;
-    display: inline-block;
+    padding: 15px 18px;
+    /* Отступ для ячеек, чтобы текст не прилипал к границам */
+    text-align: left;
+    vertical-align: top;
+    border: none;
+    /* Удаляем границы ячеек */
 }
 
-.checkout__pay-var {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 15px;
-    align-items: start;
+.checkout__your-order-table .item-name {
+    width: 214px;
+    /* Ширина первого столбца */
+}
+
+.checkout__your-order-table .item-price {
+    width: 70px;
+    /* Ширина второго столбца */
 }
 
 .checkout__your-order-wrapper-total {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 11px 14px 18px;
     background: #F1EADC;
+    padding: 15px 18px;
+    /* Отступы для итоговой строки */
 }
 
-.checkout__your-order-total {
-    font-size: 20px;
-}
 
-.checkout__your-order-total-r {
-    padding-right: 13px;
-}
+
+
+
+
 
 .checkout__pay-var {
     display: flex;
