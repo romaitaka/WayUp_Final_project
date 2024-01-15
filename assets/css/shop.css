@@ -142,3 +142,21 @@
     }
 
 }
+
+/* 767-576 */
+
+@media screen and (max-width: 767px) {
+    .shop__product-category-button {
+        padding: 19px 20px;
+        font-size: 12px;
+        width: 150px;
+    }
+
+    .shop__product-feed-wrapper {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}

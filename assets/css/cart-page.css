@@ -280,3 +280,34 @@ td {
         width: 25%;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .cart-page__one-item-in-the-cart-wrapper {
+        width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cart-page__close-button {
+        margin: 0;
+    }
+
+    .cart-page__one-item-in-the-cart-img {
+        margin: 0;
+    }
+
+    .cart-page__one-item-in-the-cart-product-name {
+        margin: 0;
+    }
+
+    .cart-page__managment-wrapper {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+    }
+
+    .apply-a-coupon-button {
+       margin: 0;
+    }
+}

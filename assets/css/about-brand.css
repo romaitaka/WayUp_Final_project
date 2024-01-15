@@ -145,3 +145,19 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 767px) {
+
+    .idea-and-woman {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .magic-in-the-details {
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+    }
+
+}

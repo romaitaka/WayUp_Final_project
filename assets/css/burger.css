@@ -28,7 +28,7 @@ button {
 }
 
 /* Отобразить бургер-меню и кнопку на экранах от 767px до 576px */
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .burger-menu__button {
         display: block;
     }
@@ -53,4 +53,10 @@ button {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+    .burger-menu__button {
+        display: block;
+    }
 }

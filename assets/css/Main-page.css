@@ -607,3 +607,31 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .new-collection__products {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .value-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .value {
+        width: 70%;
+    }
+
+    .dream-team-photos__item {
+        width: 400px;
+        height: 300px;
+    }
+
+    .dream-team-photos__vector-left,
+    .dream-team-photos__vector-right {
+        top: 50%;
+    }
+
+}

@@ -141,4 +141,16 @@ body input {
         width: 540px;
         padding: 0 15px;
     }
+
+    .container_flex-column {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        width: 320px;
+        padding: 0 5px;
+    }
+
 }

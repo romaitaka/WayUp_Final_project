@@ -219,3 +219,15 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .one-item__product-wrapper {
+        flex-direction: column;
+    }
+
+    .one-item__related-products-wrapper {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
