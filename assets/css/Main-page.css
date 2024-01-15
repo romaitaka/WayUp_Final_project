@@ -633,5 +633,43 @@
     .dream-team-photos__vector-right {
         top: 50%;
     }
+}
 
+@media screen and (max-width: 575px) {
+    .offer__photo {
+        width: 350px;
+        height: 600px;
+    }
+
+    .offer__mini-photo-left {
+        bottom: -130px;
+        left: -32px;
+        width: 150px;
+        height: 250px;
+    }
+
+    .offer__mini-photo-right {
+        top: 70px;
+        right: -32px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .offer__dots {
+        margin-top: 170px;
+    }
+
+    .dream-team-photos__vector-left {
+        left: 10px;
+        top: 50%;
+    }
+    
+    .dream-team-photos__vector-right {
+        right: 10px;
+        top: 50%;
+    }
+    
+    .dream-team-wrapper {
+        gap: 50px;
+    }
 }

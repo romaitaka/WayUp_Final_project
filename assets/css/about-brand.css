@@ -161,3 +161,9 @@
     }
 
 }
+
+@media screen and (max-width: 575px) {
+    .about-brand__title {
+        font-size: 35px;
+    }
+}

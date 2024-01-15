@@ -124,3 +124,15 @@
         justify-content: flex-start;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .clothing-category {
+        display: none;
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}

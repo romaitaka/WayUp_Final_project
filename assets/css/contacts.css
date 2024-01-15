@@ -179,3 +179,14 @@ textarea {
         gap: 40px;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .contacts__title {
+        font-size: 35px;
+    }
+
+    .map {
+        height: 410px;
+    }
+    
+}

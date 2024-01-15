@@ -311,3 +311,13 @@ td {
        margin: 0;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .cart-page__title {
+        font-size: 35px;
+    }
+
+    .cart-page__the-final-price-wrapper {
+        flex-direction: column;
+    }
+}

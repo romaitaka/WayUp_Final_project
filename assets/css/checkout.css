@@ -219,3 +219,9 @@
         margin-bottom: 130px;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .checkout__title {
+        font-size: 35px;
+    }
+}

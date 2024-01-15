@@ -231,3 +231,18 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 575px) {
+    .one-item__title {
+        font-size: 35px;
+    }
+
+    .one-item__bread-crumbs {
+        flex-wrap: wrap;
+    }
+
+    .one-item__product-img {
+        width: 350px;
+        height: 450px;
+    }
+}
