@@ -103,3 +103,18 @@
 .payment-wrapper {
     margin-bottom: auto;
 }
+
+@media screen and (max-width: 991px) {
+    .second-footer-wrapper {
+        margin: 0 auto;
+    }
+
+    .third-footer-wrapper {
+        display: none;
+    }
+
+    .clothing-category {
+        align-items: flex-end;
+        margin-left: auto;
+    }
+}

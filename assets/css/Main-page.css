@@ -520,3 +520,83 @@
         height: 406px;
     }
 }
+
+/* Large 991 - 768 px */
+
+@media screen and (max-width: 991px) {
+    .offer__title {
+        font-size: 30px;
+    }
+
+    .offer__text {
+        font-size: 16px;
+    }
+
+    .offer__photo-wrapper-bg {
+        display: none;
+    }
+
+    .main-page-first-display {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .offer__photo-wrapper {
+        margin: 0;
+    }
+
+    .offer__title,
+    .offer__text {
+        width: 100%;
+    }
+
+    .offer-and-dots-wrapper {
+        width: 60%;
+        align-items: center;
+    }
+
+    .offer__dots {
+        margin-left: 0;
+    }
+
+    .offer-and-dots-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer__buttons {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .new-collection__products {
+        flex-wrap: wrap;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .value {
+        width: 220px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dream-team-photos__item {
+        width: 560px;
+        height: 374px;
+    }
+
+    .dream-team-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .dream-team-photos__description {
+        width: 560px;
+        align-items: center;
+    }
+}

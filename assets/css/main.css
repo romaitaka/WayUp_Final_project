@@ -124,3 +124,12 @@ body input {
         justify-content: space-between;
     }
 }
+
+/* Large 991 - 768 px */
+
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 720px;
+    }
+
+}
