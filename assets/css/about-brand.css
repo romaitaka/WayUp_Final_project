@@ -40,7 +40,7 @@
 
 .idea-and-woman {
     display: flex;
-    gap: 94px;
+    justify-content: space-between;
 }
 
 .idea-and-woman__img {
@@ -72,7 +72,7 @@
 
 .magic-in-the-details {
     display: flex;
-    gap: 123px;
+    justify-content: space-between;
 }
 
 .magic-in-the-details-wrapper {
@@ -119,4 +119,14 @@
         margin-bottom: 130px;
     }
 
+    .idea-and-woman__img,
+    .magic-in-the-details__img {
+        width: 368px;
+        height: 456px;
+    }
+
+    .idea-and-woman-wrapper,
+    .magic-in-the-details-wrapper {
+        width: 451px;
+    }
 }

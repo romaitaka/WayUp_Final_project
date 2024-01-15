@@ -40,7 +40,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid transparent;
 }
 
@@ -247,5 +248,9 @@ th, td {
 @media screen and (max-width: 1199px) {
     .cart-page__the-final-price-wrapper {
         margin-bottom: 130px;
+    }
+
+    .apply-a-coupon-button {
+        margin-right: auto;
     }
 }
