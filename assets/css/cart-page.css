@@ -308,7 +308,7 @@ td {
     }
 
     .apply-a-coupon-button {
-       margin: 0;
+        margin: 0;
     }
 }
 
@@ -320,4 +320,40 @@ td {
     .cart-page__the-final-price-wrapper {
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 450px) {
+    /* Заголовки таблицы */
+    .cart-page__table-header-product,
+    .cart-page__table-header-price,
+    .cart-page__table-header-count,
+    .cart-page__table-header-count-total {
+        font-size: 12px;
+        /* Уменьшить размер шрифта */
+        padding: 5px;
+        /* Уменьшить отступы */
+    }
+
+    /* Элементы строки товара */
+    .cart-page__one-item-in-the-cart-wrapper {
+        gap: 10px;
+        /* Уменьшить расстояние между элементами в строке */
+    }
+
+    .cart-page__table-string-quantity input {
+        margin: 0;
+        /* Убрать или уменьшить отступы вокруг поля ввода количества */
+        padding: 5px;
+        /* Уменьшить внутренние отступы */
+    }
+
+    .cart-page__table-string {
+        padding-top: 10px;
+        /* Уменьшить отступ сверху для строк таблицы */
+    }
+
+    .cart-page__table-header-product {
+        text-align: center;
+    }
+
 }

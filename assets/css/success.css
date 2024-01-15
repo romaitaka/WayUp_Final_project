@@ -101,3 +101,17 @@
         flex-wrap: wrap;
     }
 }
+
+@media screen and (max-width: 450px) {
+    .success__title {
+        font-size: 35px;
+    }
+
+    .success__main-content {
+        text-align: center;
+    }
+
+    .success__main-content-img {
+        margin: 0;
+    }
+}
