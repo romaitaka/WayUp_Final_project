@@ -573,6 +573,7 @@
 
     .new-collection__products {
         flex-wrap: wrap;
+        row-gap: 30px;
     }
 
     .section-title {
@@ -598,5 +599,9 @@
     .dream-team-photos__description {
         width: 560px;
         align-items: center;
+    }
+
+    .dream-team-photos__text {
+        text-align: center;
     }
 }
