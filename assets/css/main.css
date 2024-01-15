@@ -11,6 +11,7 @@
 @import url(../css/cart-page.css);
 @import url(../css/checkout.css);
 @import url(../css/success.css);
+@import url(../css/burger.css);
 
 *,
 *::before,
@@ -127,9 +128,17 @@ body input {
 
 /* Large 991 - 768 px */
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 991px) {
     .container {
         width: 720px;
     }
+}
 
+/* 767-576px */
+
+@media screen and (max-width: 767px) {
+    .container {
+        width: 540px;
+        padding: 0 15px;
+    }
 }

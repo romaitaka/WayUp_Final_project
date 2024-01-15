@@ -1,0 +1,56 @@
+button {
+    background: none;
+    /* Убрать фон */
+    color: inherit;
+    /* Наследовать цвет текста от родителя */
+    border: none;
+    /* Убрать границу */
+    padding: 0;
+    /* Убрать внутренние отступы */
+    font: inherit;
+    /* Наследовать шрифт от родителя */
+    cursor: pointer;
+    /* Установить курсор в виде указателя */
+    outline: inherit;
+    /* Наследовать контур от родителя (для доступности) */
+}
+
+
+/* Скрыть бургер-меню на экранах шире 767px */
+.burger-menu {
+    display: none;
+}
+
+/* Стили для бургер-кнопки */
+.burger-menu__button {
+    display: none;
+    /* Скрыть кнопку на экранах шире 767px */
+}
+
+/* Отобразить бургер-меню и кнопку на экранах от 767px до 576px */
+@media (max-width: 767px) {
+    .burger-menu__button {
+        display: block;
+    }
+}
+
+/* Стили для открытого бургер-меню */
+.burger-menu.open {
+    display: block;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 90px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.05);
+    /* Тень */
+    border-radius: 10px;
+}
+
+.burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}

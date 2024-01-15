@@ -45,7 +45,6 @@
 .contacts__info-wrapper {
     gap: 98px;
     display: flex;
-    padding-right: 39px;
 }
 
 .contacts__info-phone-wrapper,
@@ -166,5 +165,17 @@ textarea {
 
     .feedback-form {
         margin-bottom: 130px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contacts__hat {
+        margin-top: 95px;
+        margin-bottom: 0;
+    }
+
+    .contacts__info-wrapper {
+        flex-direction: column;
+        gap: 40px;
     }
 }

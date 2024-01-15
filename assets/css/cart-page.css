@@ -254,3 +254,29 @@ td {
         margin-right: auto;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .cart-page__hat {
+        margin-top: 95px;
+        margin-bottom: 0;
+    }
+
+    .apply-a-coupon-button,
+    .refresh-cart-button {
+        padding: 22px 38px;
+        font-size: 14px;
+    }
+
+    .cart-page__table-header-product {
+        width: 50%;
+    }
+
+    .cart-page__table-header-price,
+    .cart-page__table-header-count-total {
+        width: 17.5%;
+    }
+
+    .cart-page__table-header-count {
+        width: 25%;
+    }
+}

@@ -172,6 +172,7 @@
     padding: 22px 50px;
     background-color: #6E9C9F;
     color: #fff;
+    text-align: center;
 }
 
 .add-to-cart-button:hover {
@@ -194,4 +195,27 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+@media screen and (max-width: 991px) {
+    .one-item {
+        padding-top: 55px;
+    }
+
+    .one-item__cart-control {
+        flex-direction: column;
+    }
+
+    .add-to-cart-button {
+        padding: 22px 38px;
+    }
+
+    .one-item__related-products-wrapper {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .one-item__related-products-title {
+        text-align: center;
+    }
 }

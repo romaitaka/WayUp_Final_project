@@ -113,8 +113,32 @@
     height: 40px;
 }
 
+
+/* 1199-992px */
+
 @media screen and (max-width: 1199px) {
     .shop__product-category-button {
         padding: 19px 54px;
     }
+}
+
+/* 991-768px */
+
+@media screen and (max-width: 991px) {
+    .shop__product-categories {
+        flex-wrap: wrap;
+    }
+
+    .shop__product-category-button {
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 19px 50px;
+        width: 185px;
+        text-align: center;
+    }
+
+    .shop-hat {
+        margin-top: 95px;
+    }
+
 }

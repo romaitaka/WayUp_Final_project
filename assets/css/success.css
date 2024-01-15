@@ -6,13 +6,13 @@
     line-height: 1.4em;
     display: flex;
     flex-direction: column;
-    padding-top: 190px;
 }
 
 .success__hat {
     display: flex;
     flex-direction: column;
     gap: 26px;
+    margin-top: 190px;
     margin-bottom: 84px;
 }
 
@@ -77,5 +77,21 @@
 @media screen and (max-width: 1199px) {
     .success__hat {
         margin-top: 190px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .success__hat {
+        margin-top: 95px;
+        margin-bottom: 0x;
+    }
+
+    .success__main-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .success__to-main-page {
+        margin-left: 0;
     }
 }

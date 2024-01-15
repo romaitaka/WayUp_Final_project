@@ -89,9 +89,6 @@
     gap: 145px;
 }
 
-
-
-
 .checkout__your-order {
     width: 284px;
     margin-bottom: 15px;
@@ -134,12 +131,6 @@
     /* Отступы для итоговой строки */
 }
 
-
-
-
-
-
-
 .checkout__pay-var {
     display: flex;
     flex-direction: column;
@@ -180,7 +171,6 @@
     /* Цвет фона для псевдоэлемента */
 }
 
-
 .checkout__pay-var-option {
     display: flex;
     gap: 14px;
@@ -205,5 +195,16 @@
 @media screen and (max-width: 1199px) {
     .checkout__hat-wrapper {
         margin-top: 190px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .checkout__hat-wrapper {
+        margin-top: 95px;
+    }
+
+    .checkout-main-content {
+        gap: 0;
+        justify-content: space-between;
     }
 }

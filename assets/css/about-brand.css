@@ -130,3 +130,18 @@
         width: 451px;
     }
 }
+
+@media screen and (max-width: 991px) {
+    .about-brand__hat {
+        margin-top: 95px;
+    }
+
+    .idea-and-woman__text,
+    .magic-in-the-details__text {
+        width: 250px;
+    }
+
+    .about-brand__bread-crumbs {
+        margin-bottom: 0;
+    }
+}

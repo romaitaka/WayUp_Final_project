@@ -550,19 +550,21 @@
         width: 100%;
     }
 
-    .offer-and-dots-wrapper {
-        width: 60%;
-        align-items: center;
+    .offer {
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     .offer__dots {
+        margin-top: 100px;
         margin-left: 0;
     }
 
     .offer-and-dots-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
+        width: 60%;
     }
 
     .offer__buttons {
