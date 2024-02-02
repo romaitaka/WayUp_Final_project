@@ -86,3 +86,38 @@ form.addEventListener('submit', function (event) {
         clearError('phone');
     }
 });
+
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Всегда предотвращаем отправку формы сразу
+
+    // Проверка валидности всех полей
+    var isValidName = validateName(nameInput.value);
+    var isValidEmail = validateEmail(emailInput.value);
+    var isValidPhone = validatePhone(phoneInput.value);
+
+    if (!isValidName) {
+        showError('name', 'Пожалуйста, введите только буквы для имени');
+    } else {
+        clearError('name');
+    }
+
+    if (!isValidEmail) {
+        showError('email', 'Пожалуйста, введите корректный email');
+    } else {
+        clearError('email');
+    }
+
+    if (!isValidPhone) {
+        showError('phone', 'Пожалуйста, введите корректный номер телефона');
+    } else {
+        clearError('phone');
+    }
+
+    // Если все поля валидны, показываем confirmationModal
+    if (isValidName && isValidEmail && isValidPhone) {
+        callbackModal.style.display = 'none'; // Скрываем форму обратного звонка
+        confirmationModal.style.display = 'block'; // Показываем модальное окно подтверждения
+    }
+});
+
