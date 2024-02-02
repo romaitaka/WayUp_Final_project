@@ -189,4 +189,7 @@ textarea {
         height: 410px;
     }
     
+    .form-group {
+        width: 100%;
+    }
 }
