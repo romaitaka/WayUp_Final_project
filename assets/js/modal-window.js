@@ -86,10 +86,3 @@ form.addEventListener('submit', function (event) {
         clearError('phone');
     }
 });
-
-// CSS для .error-message (добавьте это в ваш CSS файл)
-/*
-.error-message {
-    color: red;
-}
-*/
