@@ -147,6 +147,9 @@
 }
 
 @media screen and (max-width: 767px) {
+    .idea-and-woman-wrapper {
+        width: 100%;
+    }
 
     .idea-and-woman {
         flex-direction: column;
@@ -160,6 +163,23 @@
         align-items: center;
     }
 
+
+    .idea-and-woman__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .idea-and-woman__text {
+        width: 100%;
+    }
+
+    .magic-in-the-details-wrapper {
+        width: 100%;
+    }
+
+    .magic-in-the-details__text {
+        width: inherit;
+    }
 }
 
 @media screen and (max-width: 575px) {
