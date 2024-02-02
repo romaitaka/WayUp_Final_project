@@ -33,12 +33,14 @@ function validatePhone(phone) {
 function showError(inputId, errorMessage) {
     const errorElement = document.getElementById(inputId + '-error');
     errorElement.textContent = errorMessage;
+    errorElement.className = 'error-message'; // Добавляем класс для стилизации
 }
 
 // Функция для очистки ошибок
 function clearError(inputId) {
     const errorElement = document.getElementById(inputId + '-error');
     errorElement.textContent = '';
+    errorElement.className = ''; // Удаляем класс стилизации
 }
 
 // Обработчики событий
@@ -84,3 +86,10 @@ form.addEventListener('submit', function (event) {
         clearError('phone');
     }
 });
+
+// CSS для .error-message (добавьте это в ваш CSS файл)
+/*
+.error-message {
+    color: red;
+}
+*/
