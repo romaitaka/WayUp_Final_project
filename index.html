@@ -35,21 +35,25 @@
         <!-- Содержимое модального окна -->
         <div class="modal-content">
             <img src="./assets/img/close.svg" alt="Закрыть" class="close">
-            <h3 class="modal-title">Заказать обратный звонок</h2>
-                <form id="callbackForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Имя">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="E-mail">
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" id="phone" name="phone" placeholder="Телефон">
-                    </div>
-                    <button type="submit" class="btn-submit">Заказать звонок</button>
-                </form>
+            <h3 class="modal-title">Заказать обратный звонок</h3>
+            <form id="callbackForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                    <div class="error-message" id="email-error"></div>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                    <div class="error-message" id="phone-error"></div>
+                </div>
+                <button type="submit" class="btn-submit">Заказать звонок</button>
+            </form>
         </div>
     </div>
+    
     <!-- First Modal-window -->
     <!-- Second Modal-window -->
     <div id="confirmationModal" class="modal">
