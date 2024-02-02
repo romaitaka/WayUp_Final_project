@@ -188,8 +188,16 @@ textarea {
     .map {
         height: 410px;
     }
-    
-    .form-group {
+
+    .feedback-form {
         width: 100%;
+    }
+
+    .feedback-form__body {
+        width: inherit;
+    }
+
+    .form-group {
+        width: inherit;
     }
 }
